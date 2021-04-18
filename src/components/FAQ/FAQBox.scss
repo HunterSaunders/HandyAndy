@@ -1,0 +1,78 @@
+@import '../stylingGeneral/variables';
+
+
+.faqContainerBox{
+    
+    margin: 0;
+    display: flex;
+    width: 100%;
+    
+    
+    ul.faqList{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0px;
+        width: 100%;
+        
+        
+        
+            li{
+                margin-top: 1rem;
+                width: 100%;
+                
+                .questionContainer{
+                    display: flex;
+                    text-align: left;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    background-color: $lightSectionColor;
+                    box-shadow: 0 0 10px rgba(0,0,0,.5);
+                    
+                    max-width: 1200px;
+                    
+                    
+                    .question{
+                        font-weight: bold;
+                        line-height: normal;
+                        font-size: 18px;
+                        text-align: left;
+                        color: $primaryTextColor;
+                        width: 100%;
+                        &::before{
+                            content: 'Q: ';
+                            color: $primaryBtn;
+                        }
+                    }
+                    .icon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 1rem;
+                        .fas{
+                            float: right;
+                        }
+                    }
+                }
+    
+
+                .answerContainer{
+                    text-align: justify;
+                    padding: 1rem;
+                    font-size: 16px;
+                    p{
+                        &::before{
+                            content: 'A: ';
+                            color: $secondaryBtn;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+    }
+}
+
+
+
+

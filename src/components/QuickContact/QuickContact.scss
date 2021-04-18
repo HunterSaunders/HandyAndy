@@ -1,0 +1,58 @@
+@import '../stylingGeneral/variables';
+
+.quickContactContainer{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 2rem;
+
+    .quickContactItem{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .fas{
+            display: flex;
+            color: $primaryBtn;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        .quickContactInfo{
+            margin-left: 1rem;
+            p.infoFaded{
+                color: $primaryTextColorFaded;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            p.infoBold{
+                color: $primaryTextColor;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 750px){
+    .quickContactContainer{
+        grid-template-columns:  repeat(2, 1fr);
+
+        .lastItem{
+            grid-column: 1/3 ;
+        }
+    }
+}
+
+@media screen and (max-width: 470px){
+    .quickContactContainer{
+        grid-template-columns:  1fr;
+
+        .lastItem{
+            grid-column: 1/2 ;
+        }
+    }
+}

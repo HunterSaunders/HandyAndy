@@ -1,0 +1,321 @@
+[
+    {
+        "title": "Cargo Van",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "The 3 yard dump trucks are fantastic for either picking up new material or hauling out old material. Whether it be dirt, rock, concrete or whatever else, the three yard dump truck will make quick work of big projects.",
+        "image": "cargovan",
+        "specifications" : [
+            {"spec": "pickles"},
+            {"spec": "dog"}
+        ]
+    },
+
+    {
+        "title": "Pickup Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "threeyard",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "Pickup Truck w/ Liftgate",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "10' Box Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "15' Box Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "15' Box Truck w/ Liftgate",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "22' Box Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "26' Box Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "5000 LBS Debri Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "12' Flatbed",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "12' Flatbed w/ Liftgate",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "16' Flatbed",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "16' Flatbed w/ Liftgate",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "24' Flatbed",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "8000LBS Debri Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "1 Yard Dump Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "pickles"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "3 Yard Dump",
+        "dayRate": "120",
+        "weekRate": "600",
+        "monthRate": "24000",
+        "mileRate": "0.49",
+        "description": "The 3 yard dump trucks are fantastic for either picking up new material or hauling out old material. Whether it be dirt, rock, concrete or whatever else, the three yard dump truck will make quick work of big projects.",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "dog"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    },
+
+    {
+        "title": "5 Yard Dump Truck",
+        "dayRate": "20",
+        "weekRate": "100",
+        "monthRate": "400",
+        "mileRate": "0.49",
+        "description": "This is a description",
+        "image": "No image here",
+        "specifications" : [
+            {
+            "spec": "monkey"
+            },
+            {
+            "spec": "banana"
+            }
+        ]
+    }
+]

@@ -1,0 +1,30 @@
+@import '../../components/stylingGeneral/variables';
+
+
+.faqWrapper{
+    display: flex;
+    justify-content: center;
+    background-color: $lightSectionColor;
+    color: $primaryTextColor;
+    margin: 0;
+
+
+    .faqContainer{
+        width: 90%;
+        max-width: 1200px;
+        min-height: Calc(100vh - 670px);
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        align-items:center;
+        text-align: left;
+
+        .faqSection{
+            width: 100%;
+
+            h1{
+                text-align: center;
+            }
+        }   
+    }
+}

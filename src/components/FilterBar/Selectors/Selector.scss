@@ -1,0 +1,11 @@
+@import '../../stylingGeneral/variables';
+
+
+.selectorContainer{
+    width: 100%;
+    label.selectorLabel{
+        font-weight: bold;
+        color: $primaryTextColor;
+        display: none;
+    }
+}

@@ -1,0 +1,128 @@
+@import '../../components/stylingGeneral/variables';
+
+
+.homeWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $primaryTextColor;
+    margin: 0;
+    text-align: left;
+
+
+    .homeHeroSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../../components/images/seattlehero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 300px;
+        
+        .homeHeroContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, rgba(0,104,200,1), rgba(0,104,200,.5),rgba(0,104,200,.1), rgba(0,104,200,.1));
+            // background-color: rgba(0,0,0,.3);
+
+            .homeHeroInfo{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 1200px;
+                width: 90%;
+                h1{
+                    color: $primaryTextColor;
+                    font-weight: bold;
+                    span{
+                        color: $primaryBtn;
+                    }
+                }
+            }
+        }
+    }
+    .homeDarkSection{
+        display: flex;
+        justify-content: center;
+        background-color: $darkSectionColor;
+        p{
+            font-size: 13px;
+            margin: 2px 0;
+        }
+    }
+    
+    .homeLightSection{
+        display: flex;
+        justify-content: center;
+        background-color: $lightSectionColor;
+        
+    }
+    .homeSectionContainer{
+        width: 90%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+
+        h1,h3{
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        h1{
+
+            font-size: 40px;
+        }
+
+        .servicesContainer{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+
+        .aboutContent{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            text-align: justify;
+            grid-gap: 3rem;
+            align-items: center;
+            justify-content: center;
+
+            .aboutText p{
+                font-size: 18px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 980px){
+    .homeWrapper{
+        .homeSectionContainer{
+            .servicesContainer{
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 880px){
+    .homeWrapper{
+        .homeSectionContainer{
+            .aboutContent{
+                grid-template-columns: 1fr;
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}

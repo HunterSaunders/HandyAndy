@@ -1,0 +1,66 @@
+@import '../stylingGeneral/variables';
+
+.serviceCardContainer{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;    
+    grid-gap: 2rem;
+    
+    .serviceCardImgContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+            max-height: 75px;
+            opacity: .25;
+            margin-bottom: 1rem;
+        }
+        a.cardBtn{
+            width: 100%;
+            background-color: $secondaryBtnFaded;
+            border: none;
+            float: right;
+            text-align: center;
+            color: $primaryTextColor;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 3px 0;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        
+    }
+
+    .cardInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+    .cardTitle{
+        text-align: left;
+        font-weight: bold;
+        margin: 0;
+        font-size: 24px;
+    }
+    .cardText{
+        font-weight: normal;
+        text-align: justify;
+        margin: 0 0;
+    }
+    
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .serviceCardContainer{
+        .serviceCardImgContainer{
+            img{
+                max-height: 80px;
+            }
+        }
+    }
+}
+

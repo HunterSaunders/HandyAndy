@@ -1,0 +1,96 @@
+@import '../stylingGeneral/variables';
+
+
+
+
+
+.testimonialCarousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 153px;
+    h3{
+        font-size: 28px;
+        width: fit-content;
+        color: $primaryBtn;
+        margin-bottom: 0 !important;
+        text-align: left;
+        padding-left: 1rem;
+        border-left: 2px solid $primaryBtn;
+    }
+    .testimonialBox{
+        margin-top: 1rem;
+        p{
+            color: $primaryTextColor;
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+    .barsBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 200px;
+        margin-top: 1rem;
+        .box{
+            border: 2px solid $primaryTextColor;
+            background-color: $primaryTextColor;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .activeBox{
+            border: 2px solid $primaryBtn;
+            background-color: $primaryBtn;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1160px){
+    .testimonialCarousel{
+        height: 177px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .testimonialCarousel{
+        height: 201px;
+    }
+}
+
+@media screen and (max-width: 705px){
+    .testimonialCarousel{
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .testimonialCarousel{
+        height: 249px;
+    }
+}
+
+@media screen and (max-width: 505px){
+    .testimonialCarousel{
+        height: 273px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .testimonialCarousel{
+        height: 297px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .testimonialCarousel{
+        height: 321px;
+    }
+}
+
+
+

@@ -1,0 +1,75 @@
+@import '../stylingGeneral/variables';
+
+
+
+.rentalCardWrapper{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: $lightSectionColor;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    max-width: 100%;
+ 
+
+    img.rentalCardImage{
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+    }
+    
+
+    .rentalCardInfo{
+        padding:  1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        color: $primaryTextColor;
+        justify-content: space-between;
+        
+
+        h4.rentalCardTitle{
+            margin-bottom: .5rem;
+            font-weight: bold;
+        }
+        
+        p.rentalCardDescription{
+            text-align: justify;
+            font-size: 15px;
+            margin-bottom: .5rem;
+        }
+
+        .rentalCardBasePrice{
+            margin-bottom: .5rem;
+            p{
+                margin: 0;
+                font-weight: bold;
+
+                span{
+                    color: $primaryBtn;
+                    font-size: 20px;
+                }
+            }
+
+            .basePriceTitle{
+                font-size: 20px;
+            }
+        }
+
+        a.rentalCardBtn{
+            background-color: $secondaryBtnFaded;
+            color: $primaryTextColor;
+            text-align: center;
+            width: 100% ;
+            border-radius: 2px;
+            text-decoration: none;
+            padding: .3rem;
+            letter-spacing: 2px;
+            &:hover{
+                background-color: $secondaryBtn;
+            }
+    }   
+    }
+    
+}
+
+
+
+
+

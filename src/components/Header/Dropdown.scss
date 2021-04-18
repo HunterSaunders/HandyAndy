@@ -1,0 +1,50 @@
+@import '../stylingGeneral/variables';
+
+.dropdown-menu {
+  display: inline-block;
+  flex-direction: column;
+  background: $darkSectionColor;
+  width: 200px;
+  position: absolute;
+  top: 30.8px;
+  list-style: none;
+  text-decoration: none;
+  text-align: start;
+  border-radius: 0;
+  color: $primaryTextColor;
+}
+
+.dropdown-menu li {
+    background: $darkSectionColor;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background: $secondaryBtnFaded;
+    text-decoration: none;
+    color: $primaryTextColor;
+}
+
+.dropdown-menu.clicked {
+    display: none;
+}
+
+.dropdown-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: $primaryTextColor;
+    padding: .5rem;
+
+    &:hover{
+      color: $primaryTextColor;
+      text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+  .fa-caret-down {
+    display: none;
+  }
+}

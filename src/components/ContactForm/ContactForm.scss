@@ -1,0 +1,69 @@
+@import '../stylingGeneral/variables';
+
+
+
+.contactFormContainer{
+    padding: 1rem 0;
+    width: 100%;
+    text-align: left;
+    
+    h1.contactFormHeader{
+        margin: 0;
+        
+    }
+
+    .formNote{
+        font-size: 12px;
+        margin-top: 1rem;
+        &::after{
+            content: '*';
+            color: red;
+            font-size: 20px;
+        }
+    }
+
+    .contactForm{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        margin-top: 1rem;
+
+
+        .inputField{
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            color: $primaryTextColor;
+            background-color: #0a0a0a;
+            border: none;
+            min-height: 30px;
+            
+        }
+        .nameInput, .subjectInput{
+            grid-column: 1/3;
+            
+        }
+        .messageInput{
+            grid-column: 1/3;
+            height: 196.98px;
+            resize: none;
+        }
+        .submitButton{
+            grid-column: 1/3;
+            background-color: rgba(255,230,0,1);
+            color: #000;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    .contactForm{
+        .phoneInput, .emailInput{
+            grid-column: 1/3;
+        }
+    }
+}
+

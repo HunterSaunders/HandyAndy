@@ -1,0 +1,281 @@
+@import '../../components/stylingGeneral/variables';
+
+
+.toolsPageWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(21, 21, 21, 1);
+
+    .toolsHeroSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../../components//images/toolsHero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 300px;
+        
+        .toolsHeroContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.5);
+
+            .toolsHeroInfo{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                max-width: 1200px;
+                width: 90%;
+                h1{
+                    text-align: center;
+                    color: $primaryTextColor;
+                    font-weight: bold;
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+
+    .toolsRentalInfoSection{
+        background-color: $darkSectionColor;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+        .toolsRentalInfoContainer{
+            width: 90%;
+            max-width: 1200px;
+            padding: 1rem 0;
+        }
+    }
+
+    .toolsContainer{
+        width: 90%;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns:  1fr 1fr auto;
+        grid-gap: 6rem;
+        padding: 2rem 0;
+        
+
+        .toolsInfo, .toolsInfoList{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            color: $primaryTextColor;
+            
+            p{
+                text-align: justify;
+
+                span{
+                    text-decoration: underline;
+                    text-decoration-color: $secondaryBtnFaded;
+                    text-decoration-thickness: 3px;
+                    font-weight: bold;
+                }
+            }
+
+            a.toolsContact{
+                width: 100%;
+                background-color: $secondaryBtn;
+                padding: 5px 0;
+                text-align: center;
+                text-decoration: none;
+                color: $primaryTextColor;
+                border-radius: 5px;
+                float: inline-end;
+                
+            }
+
+            .toolsList{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                ul{
+                    padding: 0 1rem;
+                    
+                }
+            }
+
+        }
+
+
+        .toolsIconContainer{
+            img{
+                max-height: 250px;
+                opacity: 1;
+                border-radius:  0 10px 0 10px ;
+            }
+        }
+    }
+
+    .propaneContainer{
+        width: 90%;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: auto 1fr 1fr ;
+        grid-gap: 6rem;
+        padding: 2rem 0;
+        
+
+        .propaneInfo{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            color: $primaryTextColor;
+            
+            p{
+                text-align: justify;
+            }
+
+            ul{
+                padding: 0 1rem;
+            }
+        }
+
+        .propanePricing{
+            color: $primaryTextColor;
+            text-align: left;
+            h2{
+                font-weight: bold;
+            }
+
+            ul{
+                list-style-type: none;
+                padding: 0;
+                
+            }
+        }
+
+        .propaneIconContainer{
+            img{
+                max-height: 250px;
+                opacity: 1;
+                border-radius: 10px 0 10px 0 ;
+            }
+        }
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .toolsPageWrapper{
+        .toolsContainer{
+            grid-template-columns: 1fr auto;
+            grid-gap: 2rem;
+            .toolsInfo{
+                grid-column: 1/3;
+            }
+            
+            .toolsInfoList{
+                grid-column: 1/2;
+
+            }
+            .toolsIconContainer{
+                grid-column: 2/3;
+
+
+            }
+        }
+        .propaneContainer{
+            grid-template-columns: auto 1fr;
+            grid-row-gap: 0;
+            grid-column-gap: 4rem;
+
+            .propaneIconContainer{
+                grid-row: 1/3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .toolsPageWrapper{
+        .propaneContainer{
+            grid-template-columns: auto 1fr;
+            grid-row-gap: 0;
+            grid-column-gap: 2rem;
+
+            .propaneInfo{
+                grid-column: 1/3;
+            }
+
+            .propanePricing{
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+
+            .propaneIconContainer{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                img{
+                    height: 123px;
+                    
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px){
+
+    .toolsPageWrapper{
+        .toolsContainer{
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+            .toolsInfo{
+                grid-column: 1/2;
+            }
+            
+            .toolsInfoList{
+                grid-column: 1/2;
+
+            }
+            .toolsIconContainer{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .toolsPageWrapper{
+        .propaneContainer{
+
+            .propanePricing{
+                grid-column: 1/3;
+                grid-row: 2/3;
+                text-align: center;
+                h2{
+                    font-size: 24px;
+                }
+                h5{
+                    font-size: 16px;
+                }
+            }
+            .propaneIconContainer{
+                img{
+                    display: none;
+                }
+
+            }
+        }
+    }
+}

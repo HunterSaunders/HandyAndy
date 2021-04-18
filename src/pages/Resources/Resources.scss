@@ -1,0 +1,69 @@
+@import '../../components/stylingGeneral/variables';
+
+
+
+.resourcesWrapper{
+    display: flex;
+    justify-content: center;
+    background-color: $lightSectionColor;
+    color: $primaryTextColor;
+    margin: 0;
+
+    .resourcesContainer{
+        width: 90%;
+        max-width: 1200px;
+        min-height: Calc(100vh - 470px);
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        align-items:center;
+        text-align: left;
+
+        h1{
+            margin: 0;
+        }
+
+        .downloadsGrid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 4rem;
+            width: 100%;
+            margin-bottom: 2rem;
+
+            .downloadCard{
+                text-align: left;
+                padding-top: 1rem;
+            }
+
+            ul{
+                list-style: none;
+                padding-inline-start: 0px;
+                li{
+                    margin-bottom: .5rem;
+                    a{
+                        color: $primaryTextColor;
+                        text-align: left;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    .resourcesWrapper{
+        .resourcesContainer{
+            .downloadsGrid{
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
+            }
+        }
+    }
+
+}

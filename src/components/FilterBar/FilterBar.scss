@@ -1,0 +1,41 @@
+@import '../stylingGeneral/variables';
+
+.filterBarContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) .5fr;
+    grid-gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3px;
+    background-color: $secondaryBtnFaded;
+    box-shadow: 0 0 30px #000;
+    margin-bottom: 1rem;
+
+    .filterBtnContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .filterBtn{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            color: #fff;
+            width: 100%;
+            height: 38px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+
+    .filterBarContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    
+}

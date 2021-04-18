@@ -1,0 +1,60 @@
+.aboveHeaderWrapper{
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .aboveHeader{
+        width: 90%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        padding: .5rem 0;
+        
+
+
+        .navContainer{
+            display: flex;
+            list-style: none;
+            color: rgba(255,255,255,.6);
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-size: 12px;
+            padding: 0;
+
+            .aboveHeaderConactInfo{
+                display: flex;
+                
+                li{
+                    margin-right: 1rem;
+                }
+            }
+            .aboveHeaderLinks{
+                display: flex;
+                li{
+                    margin-left: 1rem;
+                }
+            }
+            .fab, .fas{
+                color: rgba(255,255,255,.6);
+            }
+        }
+    }   
+}
+
+
+
+@media screen and (max-width: 550px){
+    .aboveHeaderWrapper{
+        display: none;
+    }
+}

@@ -1,0 +1,73 @@
+@import '../stylingGeneral/variables';
+
+
+.mobileMenuWrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 62px;
+    left: -5%;
+    color: $primaryTextColor;
+    background-color: $darkSectionColor;
+    z-index: 10;
+    display: flex;
+    
+
+    ul.mobileMenuList{
+        position: relative;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80%;
+        width: 100%;
+        align-items: flex-start;
+
+        li.mobileMenuItem{
+            position: relative;
+            font-size: 30px;
+            padding: 1rem 0;
+            padding-left: 10%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            left: -10%;
+            width: 110vh;
+
+            a{
+                text-decoration: none;
+                color: $primaryTextColor;
+            }
+
+            
+
+            ul.mobileMenuSubList{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                display: block;
+                width: 100%;
+                padding: 0;
+                font-size: 25px;
+
+                li.subMenuItem{
+                   
+                    position: relative;
+                    padding-left: 10%;
+                    width: 100%;
+                    margin-top: 1rem;
+            
+                    
+                }
+            }
+
+            &.mobileBtn{
+                a{
+                color: $primaryBtn;
+                width: 105vw;
+                }
+            }
+        }
+
+    }
+}

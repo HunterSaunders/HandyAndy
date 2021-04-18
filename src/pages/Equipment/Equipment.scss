@@ -1,0 +1,92 @@
+@import '../../components/stylingGeneral/variables';
+
+
+.equipmentPageWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(21, 21, 21, 1);
+
+    .equipmentHeroSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../../components//images/equipmentHero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 300px;
+        
+        .equipmentHeroContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.5);
+
+            .equipmentHeroInfo{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                max-width: 1200px;
+                width: 90%;
+                h1{
+                    text-align: center;
+                    color: $primaryTextColor;
+                    font-weight: bold;
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+
+    .rentalInfoSection{
+        background-color: $darkSectionColor;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+        .rentalInfoContainer{
+            width: 90%;
+            max-width: 1200px;
+            padding: 1rem 0;
+        }
+    }
+
+    .equipmentCardSection{
+        width: 90%;
+        max-width: 1200px;
+        padding: 1rem 0;
+        display: grid;
+        grid-gap: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .equipmentPageWrapper{
+        .equipmentCardSection{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 850px){
+    .equipmentPageWrapper{
+        .equipmentCardSection{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
