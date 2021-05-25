@@ -26,9 +26,7 @@ const FilterBar = ({setTruckType , setMaterialType} ) =>  {
         {label: 'Wood Chips' , value: 'chips'},
         {label: 'Yard Waste' , value: 'yard-waste'},
         {label: 'Construction Debris' , value: 'con-debris'},
-        {label: 'Household Waste' , value: 'house-waste'},
-        {label: 'Dirt' , value: 'dirt'},
-        {label: 'Dirt' , value: 'dirt'},
+        {label: 'Household Waste' , value: 'house-waste'}
     ];
 
     const [filter, setFilter] = useState({
@@ -76,7 +74,7 @@ const FilterBar = ({setTruckType , setMaterialType} ) =>  {
                 // placeholder = 'Choose Material'
                 options = {materialOptions}
                 change = {onFilterChange}
-                defaultValue=  {typeOptions[0]}
+                defaultValue=  {materialOptions[0]}
             />
 
             <div className = 'filterBtnContainer'>

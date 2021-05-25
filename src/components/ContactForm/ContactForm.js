@@ -5,7 +5,7 @@ const ContactForm = (props) => {
         <div className= 'contactFormContainer'>
             <h1 className = 'contactFormHeader'>{props.headerText}</h1>
             <p className = 'formNote'>All Field Are Required</p>
-            <form className = 'contactForm'>
+            <form className = 'contactForm' autoComplete="off">
                 <input type = 'text' name = 'name' placeholder = 'Name' className = 'nameInput inputField'/>
                 <input type = 'text' name = 'number' placeholder = 'Phone' className = 'phoneInput inputField'/>
                 <input type = 'text' name = 'email' placeholder = 'Email' className = 'emailInput inputField'/>

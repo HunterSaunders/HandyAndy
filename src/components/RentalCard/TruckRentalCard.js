@@ -21,7 +21,7 @@ const RentalCard = (props) => {
 
                     <h4 className = 'rentalCardTitle'>{item.title}</h4>
 
-                    <p className = 'rentalCardDescription'>{item.description}</p>
+                    <p className = 'rentalCardDescription'>{item.descriptionShort}</p>
 
                     <div className = 'rentalCardBasePrice'>
 
@@ -39,7 +39,7 @@ const RentalCard = (props) => {
                                 week: item.weekRate,
                                 month: item.monthRate,
                                 mile: item.mileRate,
-                                info: item.description,
+                                info: item.descriptionLong,
                                 specifications: item.specifications,
                                 trucksSimilar: item.similar,
                             }}} 

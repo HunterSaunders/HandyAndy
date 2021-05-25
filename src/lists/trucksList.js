@@ -27,17 +27,23 @@ const TruckList = [
         weekRate: "100",
         monthRate: "400",
         mileRate: "0.79",
-        description: "The 3 yard dump trucks are fantastic for either picking up new material or hauling out old material. Whether it be dirt, rock, concrete, the three yard dump truck will make quick work of big projects.",
+        descriptionShort: "A great rental option for a small job. This is the perfect choice to move a little furniture or a small load. The cargo van is an inexpensive option if you are looking for a covered vehicle.",
+        descriptionLong: "Cargo vans are a great option when you’re looking to haul small to medium sized furniture items without having to worry about the weather changing on you all of a sudden. Our vans are 9’ long and nearly 6’ wide, giving you just enough space to haul up to a queen-sized mattress and box spring. Vans seat up to two and rent for only $20 per time period and just $0.79 per mile. The cargo vans tend to book out on the weekends, so it’s always best to give us a call and book one of these ahead of time.",
         image: cargovan,
         specifications : [
-            {spec: "pickles"},
-            {spec: "dog"}
+            {spec: "Interior: 9'L x 5'6\"W x 4' 4.5\"T"},
+            {spec: "Wheel Wells: 52\" Between"},
+            {spec: "Overall: 17'8\"L x 6'W x 6'8\"T"},
+            {spec: "Door Opening: 4'T x 4'6\"W"},
+            {spec: "Loading Height: 25.5\"H"},
+            {spec: "Large Enough For Queen Mattress & Box Spring (No pillow Top"},
+            {spec: "Cargo Limit: 3000LBS"}
         ],
         similar: [
             {truck: 4},
             {truck: 1}
         ],
-        filterType: [ '', 'def', 'van'],
+        filterType: [ '', 'def', 'van','cargo'],
         filterMaterial: ['', 'def']
     },
 
